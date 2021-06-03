@@ -23,7 +23,7 @@ const PizzaOffers = () => {
       </h2>
       <div className={classes.toolbar} />
 
-      <Grid container justify='center' spacing={2}>
+      <Grid container justify='center' spacing={4}>
         {products.map((product) => {
           if (
             product.categories.find(
