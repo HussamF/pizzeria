@@ -17,6 +17,7 @@ const DesertOffers = () => {
           textAlign: 'center',
           color: 'black',
           fontSize: 'clamp(3rem, 5vw, 5rem)',
+          textShadow: '0px -3px 4px rgba(150, 150, 150, 1)',
         }}
       >
         Today's Dessert Offers

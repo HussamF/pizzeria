@@ -17,6 +17,7 @@ const PizzaOffers = () => {
           textAlign: 'center',
           color: 'white',
           fontSize: 'clamp(3rem, 5vw, 5rem)',
+          textShadow: '0px -3px 2px rgba(255, 255, 255, 1)',
         }}
       >
         Today's Pizza Offers
