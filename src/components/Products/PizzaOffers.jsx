@@ -10,7 +10,17 @@ const PizzaOffers = () => {
   if (!products.length) return <p>Loading...</p>;
   console.log(products);
   return (
-    <main className={classes.content}>
+    <main className={classes.content} style={{ background: '#18010a' }}>
+      <div className={classes.toolbar} />
+      <h2
+        style={{
+          textAlign: 'center',
+          color: 'white',
+          fontSize: 'clamp(3rem, 5vw, 5rem)',
+        }}
+      >
+        Today's Pizza Offers
+      </h2>
       <div className={classes.toolbar} />
 
       <Grid container justify='center' spacing={2}>

@@ -12,6 +12,16 @@ const DesertOffers = () => {
   return (
     <main className={classes.content}>
       <div className={classes.toolbar} />
+      <h2
+        style={{
+          textAlign: 'center',
+          color: 'black',
+          fontSize: 'clamp(3rem, 5vw, 5rem)',
+        }}
+      >
+        Today's Dessert Offers
+      </h2>
+      <div className={classes.toolbar} />
 
       <Grid container justify='center' spacing={4}>
         {products.map((product) => {
