@@ -70,7 +70,7 @@ const PrimarySearchAppBar = () => {
               height='25px'
               className={classes.image}
             />
-            SamPizza
+            Home
           </Typography>
 
           <div className={classes.grow} />

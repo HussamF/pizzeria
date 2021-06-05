@@ -10,14 +10,14 @@ const PizzaOffers = () => {
   if (!products.length) return <p>Loading...</p>;
   console.log(products);
   return (
-    <main className={classes.content} style={{ background: '#18010a' }}>
+    <main className={classes.content} style={{ background: '#9b9b9b' }}>
       <div className={classes.toolbar} />
       <h2
         style={{
           textAlign: 'center',
-          color: 'white',
+          color: 'black',
           fontSize: 'clamp(3rem, 5vw, 5rem)',
-          textShadow: '0px -3px 2px rgba(255, 255, 255, 1)',
+          textShadow: '0px -3px 4px rgba(150, 150, 150, 1)',
         }}
       >
         Today's Pizza Offers

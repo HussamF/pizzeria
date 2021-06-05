@@ -14,6 +14,8 @@ const Menu = () => {
   );
 };
 
-const MenuContainer = styled.main``;
+const MenuContainer = styled.main`
+  overflow-x: hidden;
+`;
 
 export default Menu;
