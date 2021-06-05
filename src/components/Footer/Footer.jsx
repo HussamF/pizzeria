@@ -66,6 +66,7 @@ const Col3 = styled.div``;
 const ColH3 = styled.h3`
   font-size: clamp(1.3rem, 2.5vw, 2rem);
   margin-bottom: 1rem;
+  color: #f3a735;
 `;
 const ColP = styled.p`
   font-size: clamp(1.3rem, 2.5vw, 1.5rem);

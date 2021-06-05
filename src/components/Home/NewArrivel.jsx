@@ -45,7 +45,7 @@ const OrderBtn = styled.button`
   border: none;
   outline: none;
   border-radius: 5px;
-  background: #ffc500;
+  background: #f3a735;
   color: var(--white-color);
   font-weight: 400;
   transition: all 0.3s ease-in-out;

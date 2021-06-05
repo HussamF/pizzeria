@@ -35,9 +35,9 @@ const Product = ({ product, onAddToCart }) => {
         </div>
         <Typography
           dangerouslySetInnerHTML={{ __html: product.description }}
-          style={{ padding: '1rem 2rem', textAlign: 'center' }}
+          style={{ padding: '.5rem 1rem', textAlign: 'center' }}
           variant='body2'
-          color='textSecondary'
+          color='white'
           component='p'
           // component={Link}
         />
@@ -51,7 +51,7 @@ const Product = ({ product, onAddToCart }) => {
           Add To Cart
         </Typography>
         <IconButton aria-label='Add to Cart' onClick={handleAddToCart}>
-          <AddShoppingCart />
+          <AddShoppingCart color='white' />
         </IconButton>
       </CardActions>
     </Card>

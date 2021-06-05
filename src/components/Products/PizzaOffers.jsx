@@ -10,7 +10,7 @@ const PizzaOffers = () => {
   if (!products.length) return <p>Loading...</p>;
   console.log(products);
   return (
-    <main className={classes.content} style={{ background: '#9b9b9b' }}>
+    <main className={classes.content} style={{ background: '#fff' }}>
       <div className={classes.toolbar} />
       <h2
         style={{

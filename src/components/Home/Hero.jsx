@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ImgBg from '../../assets/pizza-3.jpg';
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -9,7 +10,7 @@ function Hero() {
         <HeroItems>
           <HeroH1>Greatest Pizza Ever</HeroH1>
           <HeroP>Ready in 60 seconds</HeroP>
-          <HeroBtn>Place Order</HeroBtn>
+          <HeroBtn to='/menu'>Place Order</HeroBtn>
         </HeroItems>
       </HeroContent>
     </HeroContainer>
@@ -51,21 +52,22 @@ const HeroItems = styled.div`
 const HeroH1 = styled.h1`
   font-size: clamp(2.5rem, 10vw, 5rem);
   margin-bottom: 1rem;
-  box-shadow: 5px 5px #e9ba23;
+  box-shadow: 5px 5px #f3a735;
   letter-spacing: 3px;
 `;
 const HeroP = styled.p`
   font-size: clamp(1.6rem, 2.5vw, 2.2rem);
   margin-bottom: 2rem;
 `;
-const HeroBtn = styled.button`
+const HeroBtn = styled(Link)`
   font-size: var(--p-fontSize);
   border: none;
   padding: 1rem 4rem;
-  border-radius: 5px;
-  background: #e31837;
+  border-radius: 10px;
+  background: #fe2903;
   color: var(--white-color);
   transition: all 0.2s ease-out;
+  text-decoration: none;
   &:hover {
     background: #ffc500;
   }
