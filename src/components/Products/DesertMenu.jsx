@@ -4,13 +4,24 @@ import { useGlobalContext } from '../../context';
 import Product from './Product/Product';
 import useStyles from './styles';
 
-const DesertOffers = () => {
+const DesertMenu = () => {
   const classes = useStyles();
   const { products, handleAddToCart } = useGlobalContext();
   if (!products.length) return <p>Loading...</p>;
   console.log(products);
   return (
     <main className={classes.content}>
+      <div className={classes.toolbar} />
+      <h2
+        style={{
+          textAlign: 'center',
+          color: 'black',
+          fontSize: 'clamp(3rem, 5vw, 5rem)',
+          textShadow: '0px -3px 4px rgba(150, 150, 150, 1)',
+        }}
+      >
+        Dessert's Menu
+      </h2>
       <div className={classes.toolbar} />
 
       <Grid container justify='center' spacing={4}>
@@ -32,4 +43,4 @@ const DesertOffers = () => {
   );
 };
 
-export default DesertOffers;
+export default DesertMenu;

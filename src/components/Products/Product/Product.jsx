@@ -7,6 +7,7 @@ import {
   Typography,
   IconButton,
 } from '@material-ui/core';
+// import { Link } from 'react-router-dom';
 import { AddShoppingCart } from '@material-ui/icons';
 
 import useStyles from './styles';
@@ -34,13 +35,21 @@ const Product = ({ product, onAddToCart }) => {
         </div>
         <Typography
           dangerouslySetInnerHTML={{ __html: product.description }}
-          style={{ padding: '0 2rem', textAlign: 'left' }}
+          style={{ padding: '1rem 2rem', textAlign: 'center' }}
           variant='body2'
           color='textSecondary'
           component='p'
+          // component={Link}
         />
       </CardContent>
       <CardActions disableSpacing className={classes.cardActions}>
+        <Typography
+          varian='h3'
+          onClick={handleAddToCart}
+          className={classes.addToCart}
+        >
+          Add To Cart
+        </Typography>
         <IconButton aria-label='Add to Cart' onClick={handleAddToCart}>
           <AddShoppingCart />
         </IconButton>

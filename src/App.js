@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import { Navbar, Cart, Checkout, PizzaOffers, PizzaMenu } from './components';
 import Home from './pages/Home';
+import Menu from './pages/Menu';
 import GlobalStyle from './styles/GlobalStyle';
 
 const App = () => {
@@ -82,8 +83,8 @@ const App = () => {
           <Route exact path='/'>
             <Home />
           </Route>
-          <Route exact path='/pizzamenu'>
-            <PizzaMenu />
+          <Route exact path='/menu'>
+            <Menu />
           </Route>
           <Route exact path='/cart'>
             <Cart

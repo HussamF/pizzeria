@@ -12,6 +12,7 @@ import { ShoppingCart } from '@material-ui/icons';
 import { Link, useLocation } from 'react-router-dom';
 import { useGlobalContext } from '../../context';
 import logo from '../../assets/logo.png';
+import menu from '../../assets/pizza-1.svg';
 import useStyles from './styles';
 
 const PrimarySearchAppBar = () => {
@@ -71,21 +72,43 @@ const PrimarySearchAppBar = () => {
             />
             SamPizza
           </Typography>
+
           <div className={classes.grow} />
-          {location.pathname === '/' && (
-            <div className={classes.button}>
-              <IconButton
-                component={Link}
-                to='/cart'
-                aria-label='Show cart items'
-                color='inherit'
-              >
-                <Badge badgeContent={cart.total_items} color='secondary'>
-                  <ShoppingCart />
-                </Badge>
-              </IconButton>
-            </div>
-          )}
+          <Typography
+            to='/menu'
+            component={Link}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              padding: '12px',
+              textDecoration: 'none',
+              gap: '5px',
+              color: 'black',
+            }}
+          >
+            Menu
+            <img
+              src={menu}
+              alt='menu'
+              height='24px'
+              className={classes.image}
+              style={{ marginBottom: '5px' }}
+            />
+          </Typography>
+          {/* {location.pathname === '/' && ( */}
+          <div className={classes.button}>
+            <IconButton
+              component={Link}
+              to='/cart'
+              aria-label='Show cart items'
+              color='inherit'
+            >
+              <Badge badgeContent={cart.total_items} color='secondary'>
+                <ShoppingCart />
+              </Badge>
+            </IconButton>
+          </div>
+          {/* )} */}
         </Toolbar>
       </AppBar>
       {renderMobileMenu}
