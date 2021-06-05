@@ -62,7 +62,7 @@ const HeroP = styled.p`
 const HeroBtn = styled(Link)`
   font-size: var(--p-fontSize);
   border: none;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   border-radius: 10px;
   background: #fe2903;
   color: var(--white-color);
