@@ -59,12 +59,20 @@ const PrimarySearchAppBar = () => {
         <Toolbar>
           <Typography
             // component={Link}
-            to='/'
+            // to='/'
             variant='h6'
             className={classes.title}
             color='inherit'
           >
-            <a href='/'>
+            <a
+              href='/'
+              style={{
+                textDecoration: 'none',
+                color: 'black',
+                display: 'flex',
+                alignItems: 'center',
+              }}
+            >
               <img
                 src={logo}
                 alt='commerce.js'
@@ -89,15 +97,24 @@ const PrimarySearchAppBar = () => {
               color: 'black',
             }}
           >
-            <a href='/menu'>Menu</a>
-
-            <img
-              src={menu}
-              alt='menu'
-              height='20px'
-              className={classes.image}
-              // style={{ marginBottom: '5px' }}
-            />
+            <a
+              href='/menu'
+              style={{
+                textDecoration: 'none',
+                color: 'black',
+                display: 'flex',
+                alignItems: 'center',
+              }}
+            >
+              Menu
+              <img
+                src={menu}
+                alt='menu'
+                height='20px'
+                className={classes.image}
+                style={{ marginLeft: '5px' }}
+              />
+            </a>
           </Typography>
           {/* {location.pathname === '/' && ( */}
           <div className={classes.button}>

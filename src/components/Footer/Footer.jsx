@@ -1,11 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import GoogleMapComponent from '../GoogleMap/GoogleMapComponent';
 const Footer = () => {
   return (
     <>
       <FooterContainer>
         <FooterContent>
           <Col1>
+            <ColH3>Locations</ColH3>
+
+            <ColP>Location1:</ColP>
+            <ColP>Via Giunio Silano / 18</ColP>
+            <ColP>Location2:</ColP>
+            <ColP>Via Spartaco Luigi / 24</ColP>
+          </Col1>
+          <Col2>
             <ColH3>Opening Hours</ColH3>
 
             <ColP>Monday --- 9:00 - 22:00</ColP>
@@ -15,14 +24,6 @@ const Footer = () => {
             <ColP>Friday --- 9:00 - 22:00</ColP>
             <ColP>Saturday --- 9:00 - 22:00</ColP>
             <ColP>Sunday --- 9:00 - 22:00</ColP>
-          </Col1>
-          <Col2>
-            <ColH3>Locations</ColH3>
-
-            <ColP>Location1:</ColP>
-            <ColP>Via Giunio Silano / 18</ColP>
-            <ColP>Location2:</ColP>
-            <ColP>Via Spartaco Luigi / 24</ColP>
           </Col2>
           <Col3>
             <ColH3>Contacts</ColH3>
@@ -33,6 +34,7 @@ const Footer = () => {
           </Col3>
         </FooterContent>
       </FooterContainer>
+      <GoogleMapComponent />
     </>
   );
 };
