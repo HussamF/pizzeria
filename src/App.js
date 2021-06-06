@@ -74,37 +74,26 @@ const App = () => {
   // const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
 
   return (
-    <Router>
-      <div style={{ display: 'flex' }}>
-        <GlobalStyle />
-        <CssBaseline />
+    <>
+      <GlobalStyle />
+
+      <Router>
+        {/* <div style={{ display: 'flex' }}> */}
         <Navbar />
+        {/* <CssBaseline /> */}
+
         <Switch>
-          <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route path='/menu'>
-            <Menu />
-          </Route>
-          <Route path='/cart'>
-            <Cart
-            // cart={cart}
-            // onUpdateCartQty={handleUpdateCartQty}
-            // onRemoveFromCart={handleRemoveFromCart}
-            // onEmptyCart={handleEmptyCart}
-            />
-          </Route>
-          <Route path='/checkout'>
-            <Checkout
-            // cart={cart}
-            // order={order}
-            // onCaptureCheckout={handleCaptureCheckout}
-            // error={errorMessage}
-            />
-          </Route>
+          <Route exact path='/' component={Home} />
+
+          <Route path='/menu' component={Menu} />
+
+          <Route path='/cart' component={Cart} />
+
+          <Route path='/checkout' component={Checkout} />
         </Switch>
-      </div>
-    </Router>
+        {/* </div> */}
+      </Router>
+    </>
   );
 };
 

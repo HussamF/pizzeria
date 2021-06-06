@@ -58,26 +58,28 @@ const PrimarySearchAppBar = () => {
       <AppBar position='fixed' className={classes.appBar} color='inherit'>
         <Toolbar>
           <Typography
-            component={Link}
+            // component={Link}
             to='/'
             variant='h6'
             className={classes.title}
             color='inherit'
           >
-            <img
-              src={logo}
-              alt='commerce.js'
-              height='25px'
-              className={classes.image}
-            />
-            Home
+            <a href='/'>
+              <img
+                src={logo}
+                alt='commerce.js'
+                height='25px'
+                className={classes.image}
+              />
+              Home
+            </a>
           </Typography>
 
           <div className={classes.grow} />
           <Typography
             variant='h6'
             to='/menu'
-            component={Link}
+            // component={Link}
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -87,7 +89,8 @@ const PrimarySearchAppBar = () => {
               color: 'black',
             }}
           >
-            Menu
+            <a href='/menu'>Menu</a>
+
             <img
               src={menu}
               alt='menu'
