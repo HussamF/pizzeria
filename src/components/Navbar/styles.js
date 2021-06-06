@@ -9,6 +9,7 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       // width: `calc(100% - ${drawerWidth}px)`,
       width: '100vw',
+      padding: '0 5rem',
       marginLeft: drawerWidth,
     },
   },

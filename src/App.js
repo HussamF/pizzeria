@@ -83,10 +83,10 @@ const App = () => {
           <Route exact path='/'>
             <Home />
           </Route>
-          <Route exact path='/menu'>
+          <Route path='/menu'>
             <Menu />
           </Route>
-          <Route exact path='/cart'>
+          <Route path='/cart'>
             <Cart
             // cart={cart}
             // onUpdateCartQty={handleUpdateCartQty}
@@ -94,7 +94,7 @@ const App = () => {
             // onEmptyCart={handleEmptyCart}
             />
           </Route>
-          <Route path='/checkout' exact>
+          <Route path='/checkout'>
             <Checkout
             // cart={cart}
             // order={order}

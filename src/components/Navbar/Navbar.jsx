@@ -75,6 +75,7 @@ const PrimarySearchAppBar = () => {
 
           <div className={classes.grow} />
           <Typography
+            variant='h6'
             to='/menu'
             component={Link}
             style={{
@@ -90,9 +91,9 @@ const PrimarySearchAppBar = () => {
             <img
               src={menu}
               alt='menu'
-              height='24px'
+              height='20px'
               className={classes.image}
-              style={{ marginBottom: '5px' }}
+              // style={{ marginBottom: '5px' }}
             />
           </Typography>
           {/* {location.pathname === '/' && ( */}
