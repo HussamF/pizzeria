@@ -81,12 +81,10 @@ const App = () => {
         {/* <div style={{ display: 'flex' }}> */}
         <Navbar />
         {/* <CssBaseline /> */}
+        <Route exact path='/' component={Home} />
 
+        <Route path='/menu' component={Menu} />
         <Switch>
-          <Route exact path='/' component={Home} />
-
-          <Route path='/menu' component={Menu} />
-
           <Route path='/cart' component={Cart} />
 
           <Route path='/checkout' component={Checkout} />
