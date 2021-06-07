@@ -98,7 +98,7 @@ const PrimarySearchAppBar = () => {
             }}
           >
             <a
-              href='/menu'
+              href='https://sampizzeria.netlify.app/menu'
               style={{
                 textDecoration: 'none',
                 color: 'black',
