@@ -98,7 +98,7 @@ const PrimarySearchAppBar = () => {
             }}
           >
             <a
-              href='/menu'
+              href='menu'
               style={{
                 textDecoration: 'none',
                 color: 'black',
