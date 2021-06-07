@@ -86,7 +86,7 @@ const PrimarySearchAppBar = () => {
           <div className={classes.grow} />
           <Typography
             variant='h6'
-            to='/menu'
+            // to='/menu'
             // component={Link}
             style={{
               display: 'flex',
@@ -98,7 +98,7 @@ const PrimarySearchAppBar = () => {
             }}
           >
             <a
-              href='menu'
+              href='/menu'
               style={{
                 textDecoration: 'none',
                 color: 'black',
